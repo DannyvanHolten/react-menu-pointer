@@ -1,0 +1,15 @@
+{
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx}"
+  ],
+  "coverageDirectory": "<rootDir>/test/coverage",
+  "rootDir": "../",
+  "setupFiles": ["<rootDir>/test/shim.js", "<rootDir>/test/enzyme.config.js"],
+  "testRegex": "src/.+\\-spec\\.js$",
+  "transform": {
+    ".*": "<rootDir>/test/preprocessor.js"
+  },
+  "transformIgnorePatterns": [
+    "node_modules/(?!@wehkamp)"
+  ]
+}

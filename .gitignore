@@ -1,0 +1,10 @@
+.idea
+dist/
+node_modules/
+npm-debug.log
+.env
+test/report/
+coverage/
+cypress/screenshots
+.DS_Store
+lib

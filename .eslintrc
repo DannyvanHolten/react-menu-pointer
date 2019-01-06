@@ -1,0 +1,7 @@
+{
+  "extends": "@wehkamp/wehkamp",
+  "rules": {
+    "prefer-promise-reject-errors": 0,
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*-spec.js", "webpack.config.js"]}]
+  }
+}

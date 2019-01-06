@@ -1,0 +1,90 @@
+{
+  "name": "react-menu-pointer",
+  "version": "0.0.1",
+  "description": "react-pointer is a react component for dropdown menus that can differentiate between a user trying hover over a dropdown item vs trying to navigate into a submenu's contents.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "webpack",
+    "bundle": "NODE_ENV=production && webpack",
+    "prepare": "npm run build",
+    "lint": "eslint --fix ./src",
+    "lint:staged": "lint-staged",
+    "test": "jest --config ./test/jest.json --no-cache --coverage",
+    "test:no-coverage": "jest --config ./test/jest.json",
+    "test:watch": "jest --config ./test/jest.json --no-cache --watch"
+  },
+  "pre-commit": [
+    "lint:staged"
+  ],
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://github.com:DannyvanHolten/react-menu-pointer.git"
+  },
+  "keywords": [
+    "react",
+    "menu-aim",
+    "aim",
+    "pointer",
+    "menu",
+    "dropdown"
+  ],
+  "author": "Danny van Holten",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/DannyvanHolten/react-menu-pointer/issues"
+  },
+  "homepage": "https://github.com/DannyvanHolten/react-menu-pointer#readme",
+  "dependencies": {},
+  "peerDependencies": {
+    "prop-types": ">=15.6.0",
+    "react": ">=16.6.3"
+  },
+  "devDependencies": {
+    "@wehkamp/eslint-config-wehkamp": "^1.0.1",
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.11.4",
+    "babel-eslint": "^8.0.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.7.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.11.6",
+    "codecov": "^3.0.4",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^21.2.0",
+    "jest-transform-graphql": "^2.1.0",
+    "lint-staged": "^7.2.2",
+    "path": "^0.12.7",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.14.2",
+    "prop-types": "^15.6.0",
+    "raw-loader": "^0.5.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-test-renderer": "^16.6.3",
+    "waait": "^1.0.2",
+    "webpack": "^4.17.2",
+    "webpack-bundle-analyzer": "^3.0.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.6.0"
+  }
+}

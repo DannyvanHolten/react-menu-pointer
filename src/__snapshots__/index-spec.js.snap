@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index should contain the withMenuPointer 1`] = `
+Object {
+  "default": [Function],
+}
+`;

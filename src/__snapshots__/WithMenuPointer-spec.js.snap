@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WithExperiments should render correctly 1`] = `
+<[object Object]
+  config={Object {}}
+  menuPointer={
+    Object {
+      "handleMenuLeave": [Function],
+      "handleRowEnter": [Function],
+    }
+  }
+/>
+`;
